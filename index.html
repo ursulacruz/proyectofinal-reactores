@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Reactores Químicos</title>
+    <link rel="shortcut icon" href="./img/icon_reactor.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {font-family: 'Roboto', sans-serif;}
+        h1,h2,h3,h4 {font-weight:bold;}
+        ::backdrop{color: #ddd;}
+        header {
+            background-color: #142157;
+            color:white;
+            padding: 0.5%;}
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;}
+        nav ul li {margin: 0 15px;}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;}
+        nav ul li a:hover {text-decoration: underline;}
+        section {
+            padding: 20px;
+            margin: 10px;}
+        table {
+            width: 100%;
+            border-collapse: collapse;}
+        th, td{
+            padding: 10px;
+            border: 1px solid #5c5c5c;
+            text-align: left;}
+        footer {
+            background-color: #142157;
+            color:white;
+            padding: 1%;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reactores en Ingeniería Química</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#tipos">Tipos de Reactores</a></li>
+                <li><a href="#cuadrocomparativo">Cuadro Comparativo</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <!--Sección 1: Introducción a los reactores químicos-->
+    <section id="introduccion">
+        <h2>¿Qué es un reactor químico?</h2>
+        <p>Un reactor es un equipo industrial que se utiliza para producir reacciones químicas en su interior. 
+            Está diseñado para maximizar la conversión y la selectividad de una reacción en condiciones específicas.</p>
+        <h3>Componentes principales de un reactor químico</h3>
+        <ul>
+            <li>Es un recipiente hermético.</li>
+            <li>Contiene líneas de entrada y de salida.</li>
+            <li>Hacen uso de un algoritmo de control.</li>
+            <li>Se complementan con diversos accesorios (agitadores, compuertas, serpentines, sensores de temperatura, entre otros).</li>
+        </ul>
+        <p>Los reactores se pueden clasificar de acuerdo a su operación en <span style="color: #15297c ;font-weight: bold;">reactores por lotes</span> o <span style="color: #15297c;font-weight: bold;">reactores de flujo continuo</span>.<p></p>
+    </section>
+    
+    <!--Sección 2: Tipos de reactores-->
+    <section id="tipos">
+        <h2>Tipos de reactores</h2>
+    <!--Por lotes-->
+        <!--Batch-->
+        <h3><span style="color: #15297c;">Reactor por lotes</span></h3>
+        <p>Un reactor por lotes no tiene flujo de entrada de reactivos ni flujo de salida de productos mientras la reacción se está efectuando.</p>
+        <div style="text-align: center;">
+            <img src="./img/img_batch.jpg" alt="" width="250" >
+        </div>
+    <!--Flujo continuo-->
+        <h3><span style="color: #15297c;">Reactores de flujo continuo</span></h3>
+        <!--CSTR-->
+        <ul>
+            <li style="color: #107acc;"><h4><span style="color:#107acc;">Reactor CSTR (Continuous-stirred tank)</span></h4></li>
+        </ul>
+        <p> <span style="padding:1%;">También llamado "tanque de agitación continua". En un tipo de reactor 
+            de uso muy común en procesos industriales con agitación que opera continuamente. El CSTR normalmente se opera en estado estacionario 
+            y de modo que esté bien mezclado. Como resultado de esto último, el CSTR generalmente se modela sin variaciones espaciales en la concentración, 
+            temperatura o velocidad de reacción en todos los puntos del recipiente.</span></p>
+        <div style="text-align: center;">
+            <img src="./img/img_cstr.png" alt="" width="250" >
+        </div>
+        <!--PFR-->
+        <ul>
+            <li style="color:#107acc;"><h4><span style="color: #107acc;">Reactor PFR (Plug flow reactor)</span></h4></li>
+        </ul>
+        <p><span style="padding: 1%;">Consiste en un tubo cilíndrico y normalmente se opera en estado estacionario, igual que el CSTR. En este tipo de reactor no 
+        se consideran variaciones radiales en la concentración,por eso se dice que es un reactor de flujo taponado. En el reactor tubular, 
+        los reactivos se consumen continuamente a medida que fluyen a lo largo del reactor.</span></p>
+        <div style="text-align: center;">
+            <img src="./img/img_pfr.png" alt="" width="250" >
+        </div>
+        <!--PBR-->
+        <ul>
+            <li style="color: #107acc;"><h4><span style="color: #107acc;">Reactor PBR (Packed bed reactor)</span></h4></li>
+        </ul>
+        <p><span style="padding: 1%;">A diferencia de un CSTR o un PFR, el reactor de lecho empacado es un dispositivo tubular donde ocurre una reacción química con 
+            partículas sólidas de catalizador empacadas en su interior.</span></p>
+        <div style="text-align: center;">
+            <img src="./img/img_pbr.png" alt="" width="250" >
+        </div>
+        
+    </section>
+
+    <!--Sección 3: Cuadro comparativo de reactores-->
+    <section id="cuadrocomparativo">
+        <h2>Cuadro comparativo: Tipos de reactores</h2>
+        <table  border>
+        <tr>
+            <th style="text-align: center;">Operación del reactor</th>
+            <th style="text-align: center;">Nombre</th>
+            <th style="text-align: center;">Características</th>
+            <th style="text-align: center;">Ecuación de diseño</th>
+            <th style="text-align: center;">Animaciones</th>
+        </tr>
+        <tr>
+            <td>Por lotes</td>
+            <td>Batch</td>
+            <td>
+                <ul>
+                    <li>Operación discontinua.</li>
+                    <li>No hay flujos de entrada ni de salida durante la reacción.</li>
+                    <li>Todos los reactivos pasan el mismo tiempo en el reactor.</li>
+                    <li>Suele requerir un sistema de agitación para asegurar una mezcla homogénea.</li>
+                    <li>En cualquier punto la composición y la temperatura son constantes con el tiempo.</li>
+                </ul>
+            </td>
+            <td><img src="./img/ediseno_batch.png" alt="Ecuación de diseño de un reactor Batch" width="200"></td>
+            <td><a href="https://youtu.be/4xtxZYLIc-w?si=zaH6cQK0k4LR7QtA" target="_blank">Animación de Batch</a></td>
+            
+        </tr>
+        <tr>
+            <td rowspan="3"> Flujo continuo</td>
+            <td>CSTR</td>
+            <td>
+                <ul>
+                    <li>Opera continuamente.</li>
+                    <li>No tiene variaciones espaciales en la concentración, temperatura o velocidad de reacción.</li>
+                    <li>La salida tiene la misma composición que la mezcla dentro del reactor.</li>
+                    <li>Adecuado para reacciones que no dependen del tiempo de residencia</li>
+                </ul>
+            </td>
+            <td><img src="./img/ediseno_cstr.png" alt="Ecuación de diseño de un reactor CSTR" width="200"></td>
+            <td><a href="https://youtu.be/Z1H1yojp7Z8?si=dc45AeUYys4M1-HD" target="_blank">Animación de CSTR</a></td>
+        </tr>
+        <tr>
+            <td>PFR</td>
+            <td>
+                <ul>
+                    <li>El fluido reacciona mientras se desplaza a lo largo de un tubo sin mezclarse en la dirección axial.</li>
+                    <li>La concentración de reactivos y productos, así como la temperatura, pueden variar a lo largo del reactor.</li>
+                    <li>ideal para reacciones en las que la selectividad depende del tiempo de residencia.</li>
+                    <li>No considera variaciones radiales en la concentración.</li>
+                </ul>
+            </td>
+            <td><img src="./img/ediseno_pfr.png" alt="Ecuación de diseño de un reactor PFR" width="200"></td>
+            <td><a href="https://youtu.be/Z1H1yojp7Z8?si=XZvQfsefyFxO-T5c" target="_blank">Animación de PFR</a></td>
+        </tr>
+        <tr>
+            <td>PBR</td>
+            <td>
+                <ul>
+                    <li>Se considera una variante del PFR con catalizador sólido.</li>
+                    <li>Es común en reacciones heterogéneas donde se necesita una fase sólida (catalizador) y una fase líquida o gaseosa (reactantes).</li>
+                    <li>El catalizador se encuentra en un lecho fijo, y el flujo pasa a través del lecho reaccionando sobre la superficie del catalizador.</li>
+                </ul>
+            </td>
+            <td><img src="./img/ediseno_pbr.png" alt="Ecuación de diseño de un reactor PBR" width="200"></td>
+            <td><a href="https://youtu.be/KjX4ovxkL0g?si=X3MVbCInBD6Fgqye" target="_blank">Animación de PBR</a></td>
+        </tr>
+    </table>
+    </section>
+    <!--Referencias-->
+   <footer>
+        <h2>Referencias</h2>
+        <p><span style="font-weight: bold;">Libros</span></p>
+        <p>Fogler, H. S. (1999). <span style="font-weight: bold;">Elementos de ingeniería de las reacciones químicas(3ª ed.).</span> Pearson Education.</p>
+        <p>© 2024. Todos los derechos reservados.</p>
+        
+   </footer>
+    </main>
+</body>
+</html>
