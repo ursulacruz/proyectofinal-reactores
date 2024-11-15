@@ -10,3 +10,7 @@ La página contiene las siguientes secciones principales:
 - Cuadro Comparativo: Incluye una tabla que compara las características y ecuaciones de diseño de los diferentes tipos de reactores.
 - Referencias: Ofrece referencias bibliográficas y enlaces a animaciones para cada tipo de reactor.
 
+# Instrucciones para ejecutar
+1. 
+2. 
+3. 
