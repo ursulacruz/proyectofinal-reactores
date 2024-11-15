@@ -10,10 +10,11 @@ La página contiene las siguientes secciones principales:
 - Cuadro Comparativo: Incluye una tabla que compara las características y ecuaciones de diseño de los diferentes tipos de reactores.
 - Referencias: Ofrece referencias bibliográficas y enlaces a animaciones para cada tipo de reactor.
 
-## Instrucciones para ejecutar
-1. 
-2. 
-3. 
+## Instrucciones para ejecutar localmente
+1. Clonar el repositorio.
+2. Abrir el proyecto en VSCode.
+3. Instalar la Extensión "Live Server"
+3. Ejecutar dando click en Open with Live Server.
 
 ## Legales
 - Ursula Cruz Ocampo
